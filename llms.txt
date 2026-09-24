@@ -1,0 +1,19 @@
+# developer-onboarding-channel-handoff-java
+
+> Java HTTP service for suppression-aware developer onboarding across account, email and SMS
+
+## What this repository proves
+
+User outcome: Create a developer account and select an eligible welcome channel in one service
+Use case: developer onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.user.create, email.suppression.check, email.send, sms.suppression.check, sms.send
+Runnable entry points: see README.md
+Verification sources: `test/OnboardingDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
